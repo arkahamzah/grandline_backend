@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Response;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::get('/admin', function () {
+    return view('admin.dashboard');
+});
 Route::get('/', function () {
     return view('welcome');
 });

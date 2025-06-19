@@ -1,4 +1,5 @@
 <?php
+// database/seeders/DatabaseSeeder.php
 
 namespace Database\Seeders;
 
@@ -10,6 +11,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             SeriesSeeder::class,
+            LocationSeeder::class, // Add this line
         ]);
     }
 }
